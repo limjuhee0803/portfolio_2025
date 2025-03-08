@@ -25,16 +25,75 @@
 <body>
   <!-- 헤더 영역 -->
   <header>
+    <div class="flex">
+      <div class="lt_logo">
+        <img src="./asset/image/jh_logo.png" alt="jh로고" class="up">
+      </div>
+  
+      <div class="rt_mark">
+        <a href="#">work</a>
+        <a href="#">about me</a>
+      </div>
+    </div>
   </header>
+
+  <!-- up 버튼 -->
+  <div class="up up_btn">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F9F9F9">
+      <path d="M460-200v-483.15L228.31-451.46 200-480l280-280 280 280-28.31 28.54L500-683.15V-200h-40Z"/>
+    </svg>
+  </div>
 
   <!-- 메인 영역 -->
   <main>
+
+    <!-- main top -->
+    <div class="main_top">
+      <div class="main_ot">
+        <img src="./asset/image/main_ot_pc.png" alt="문어 일러스트" class="mo_blind">
+        <img src="./asset/image/main_ot_mo.png" alt="문어 일러스트" class="pc_blind">
+      </div>
+
+      <div class="main_typo">
+        <div class="main_typo01 ">
+          <img src="./asset/image/design_typo.png" alt="Design 타이포그래피">
+          <h4>A <strong>designer</strong> as <strong>versatile</strong> as an <strong>octopus.</strong></h4>
+        </div>
+        <img src="./asset/image/portfolio_typo.png" alt="Portfolio 타이포그래피" class="main_typo02">
+      </div>
+    </div>
+
+    <!-- main_contents -->
+    <div class="main_wrapper">
+      
+      <!-- 인트로 -->
+      <div class="intro wait_scroll section">
+        <div class="intro_txt">
+          <h4 class="kr_font fade_up"><strong>문어 같은 다재다능함</strong>으로, <strong>꾸준히 성장하는 디자이너</strong> 임주희입니다.</h4>
+
+          <div class="intro_title typo_event">
+            <img src="./asset/image/intro_txt01.png" alt="" class="fade_up fade_txt">
+            <img src="./asset/image/intro_txt02.png" alt="" class="fade_up fade_txt">
+            <img src="./asset/image/intro_txt03.png" alt="" class="fade_up fade_txt">
+          </div>
+        </div>
+
+        <div class="intro_ot ">
+          <img src="./asset/image/intro_ot.png" alt="" class="mov_rt">
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+    </div>
   </main>
 
 
   <!-- script -->
   <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./js/base.js"></script>
 </body>
 
 </html>
