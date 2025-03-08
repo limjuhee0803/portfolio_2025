@@ -1,0 +1,30 @@
+@charset "utf-8";
+:root {
+    --kr-font: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui,
+      Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR',
+      'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+      sans-serif;
+    --en-font: "Inter", Arial, Helvetica, sans-serif;
+    --black: #111111;
+    --gray : #777777;
+    --white : #F9F9F9;
+}
+
+body {font-family: var(--en-font); overflow-x: hidden; color: var(--black); word-break: keep-all;}
+body::-webkit-scrollbar {display: none;}
+
+
+/*노트북 & PC : 1024px-*/
+@media all and (min-width:1024px){
+	
+}
+
+/*태블릿 가로, 세로 : 768px-1023px*/
+@media all and (min-width:768px) and (max-width:1023px){
+	
+}
+
+/*모바일 가로, 세로 : -767px*/
+@media all and (max-width:767px){
+	
+}
