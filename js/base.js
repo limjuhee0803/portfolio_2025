@@ -37,15 +37,15 @@ $(window).on('scroll', () => {
 
 //up 버튼
 document.addEventListener("DOMContentLoaded", function () {
-  const upButton = document.querySelector('.up');
+  const upButtons = document.querySelectorAll('.up');
 
-  if (upButton) {
+  upButtons.forEach(function(upButton) {
     upButton.addEventListener('click', function () {
       if (window.lenisInstance) {
         window.lenisInstance.scrollTo(0, { duration: 2 });
       }
     });
-  }
+  });
 });
 
 window.addEventListener('scroll', () => {
@@ -59,23 +59,6 @@ window.addEventListener('scroll', () => {
 });
 
 
-//스크롤 이벤트
-/*
-const fadeUpObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-      fadeUpObserver.unobserve(entry.target);
-    }
-  });
-}, { 
-  threshold: 0.5,
-  rootMargin: '0px 0px -50px 0px'
-});
-
-document.querySelectorAll('.fade_up').forEach(el => fadeUpObserver.observe(el));
-*/
-
 // 스크롤 애니메이션
 window.addEventListener("scroll", function () {
   let waitScrollElement = document.querySelector(".wait_scroll"); // wait_scroll 요소 선택
@@ -88,3 +71,19 @@ window.addEventListener("scroll", function () {
   }
 });
 
+//프로젝트 스와이퍼
+var hobby_swiper = new Swiper(".slideSwiper", {
+  slidesPerView: 1.5,
+  spaceBetween: 20,
+  slideToClickedSlide : true,
+  navigation:{
+      nextEl:".swiper-button-next",
+      prevEl:".swiper-button-prev",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 6.5,
+      spaceBetween: 20.
+    }
+  }
+});

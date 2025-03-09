@@ -11,7 +11,7 @@ h4는 16px 설명글
       sans-serif;
     --en-font: "Inter", Arial, Helvetica, sans-serif;
     --black: #111111;
-    --gray : #777777;
+    --gray : #555555;
     --white : #F9F9F9;
 }
 
@@ -21,17 +21,20 @@ body::-webkit-scrollbar {display: none;}
 h4 {font-size: 16px; color: var(--gray);}
 h4 strong{color: var(--black);}
 .flex {display: flex;}
-
 .kr_font {font-family: var(--kr-font);}
 .pc_blind {display: none;}
+.base_btn {background-color: var(--black); color: var(--white); font-size: 1rem; display: inline-block; padding: 10px 20px; border-radius: 10px; cursor: pointer; font-weight: 600; transition: 0.3s;}
+.base_btn:hover {transform: scale(1.1);}
+.wt_btn {background-color: var(--white)!important; color: var(--black)!important;}
 
-.section {width: 95%; margin: 0 auto; padding: 100px 0;}
+.section {padding: 100px 2.5%;}
 .line {border: 0.5px solid var(--gray); width: 95%; margin: 0 auto;}
 
 /* 스크롤 페이드업 효과 */
-.wait_scroll .fade_up { opacity: 0; transform: translateY(60px); /* 더 아래에서 시작 */}
+.wait_scroll .fade_up { opacity: 0; transform: translateY(60px);}
 .wait_scroll.active .fade_up { opacity: 1; transform: translateY(0); transition: opacity 1s cubic-bezier(0.22, 1, 0.36, 1), transform 1s cubic-bezier(0.22, 1, 0.36, 1);}
-.fade_txt {width: auto; display: block; padding: 5px 0;}
+
+.fade_txt {width: auto; display: block; padding: 5px 0; height: 6vh;}
 
 /* 스크롤 페이드업 효과 */
 .wait_scroll .fade_txt { opacity: 0; transform: translateY(60px); width: auto; display: block; padding: 5px 0;}
@@ -41,60 +44,8 @@ h4 strong{color: var(--black);}
 .wait_scroll .mov_rt {transform: translateX(100%);}
 .wait_scroll.active .mov_rt {transform: translateX(0); transition: 1s cubic-bezier(0.22, 1, 0.36, 1), transform 1s cubic-bezier(0.22, 1, 0.36, 1);}
 
-/* header */
-header { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; transition: top 0.3s ease;}
-header .flex { width: 95%; height: 70px; justify-content: space-between; align-items: center; margin: 0 auto; }
-header .up{cursor: pointer;}
-header .lt_logo img {width: 70px;}
-header .rt_mark {display: flex; gap: 50px;}
-header .rt_mark a {text-transform: capitalize; font-size: 16px;}
-
-.up_btn { width: 45px; height: 45px; border-radius: 50%; background-color: #11111133; position: fixed; bottom: 5%; right: 5%; display: flex; justify-content: center; align-items: center; cursor: pointer; z-index: 9999;}
+.up_btn { width: 45px; height: 45px; border-radius: 50%; background-color: #11111179; position: fixed; bottom: 5%; right: 5%; display: flex; justify-content: center; align-items: center; cursor: pointer; z-index: 9999;}
 .up_btn svg {pointer-events: none; transition: 0.3s;}
-
-.main_top {width: 100%; height: 100vh; background: url(../asset/image/pc_main_top.jpg) no-repeat 50% 50% / cover; position: sticky; top: 0; overflow: hidden; }
-.main_top .main_ot{width: 90%; margin: 0 auto; position: relative; animation: ot_slide 1s ease-out forwards; min-height: 800px;}
-.main_top .main_ot img {min-height: 800px; object-fit: contain;}
-
-
-.main_wrapper {height: 500vh; background-color: #E8E8E8; position: relative; z-index:1; box-shadow: 0 -15px 30px rgba(0, 0, 0, 0.1); }
-
-@keyframes ot_slide {
-  0% {
-    top: -20%;
-  }
-  100% {
-    top: 0;
-  }
-}
-
-.main_top .main_typo {}
-.main_top .main_typo .main_typo01{left: -3%; top: 10%; animation: typo_design 0.7s ease-out forwards; position: absolute;}
-.main_top .main_typo img{height: 160px; object-fit: contain; width: auto;}
-.main_top .main_typo .main_typo01 h4 {margin-left: 15%;}
-.main_top .main_typo .main_typo02{position: absolute; right: -16%; top: 59%; animation: typo_portfolio 0.7s ease-out forwards;}
-
-@keyframes typo_design {
-  0% {
-    left: -30%;
-  }
-  100% {
-    left: -3%;
-  }
-}
-
-@keyframes typo_portfolio {
-  0% {
-    right: -30%;
-  }
-  100% {
-    right: -16%;
-  }
-}
-
-.intro {display: flex; justify-content: space-between;}
-.intro .typo_event {margin-top: 20px;}
-.intro .intro_ot {padding-top: 150px;}
 
 /*노트북 & PC : 1024px-*/
 @media all and (min-width:1024px){
@@ -108,14 +59,6 @@ header .rt_mark a {text-transform: capitalize; font-size: 16px;}
 
 /*모바일 가로, 세로 : -767px*/
 @media all and (max-width:767px){
-  header .flex {height: 60px;}
-  header .lt_logo img {width: 50px;}
-  header .rt_mark {gap: 30px;}
-  
 	.pc_blind {display: block;}
   .mo_blind {display: none;}
-
-  .main_top {background: url(../asset/image/mo_main_top.jpg) no-repeat 50% 50% / cover; height: 90vh;}
-  .main_top .main_ot {width: 100%;}
-  .main_top .main_typo img{height: 80px;}
 }
