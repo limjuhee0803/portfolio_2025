@@ -136,9 +136,31 @@ main {margin-bottom: 260px;}
 .tech .tech_title .tech_typo{}
 .tech .tech_title .tech_typo img{ height: 3.5vh; object-fit: contain; width: auto; margin: 10px 0 20px;}
 
-.tech .tech_title .contact_box {display: inline-flex; align-items: center;}
-.tech .tech_title .contact_box svg {fill: var(--white);}
+.tech .tech_title .contact_me { display: flex; flex-direction: column; width: 160px;}
+.tech .tech_title .contact_me .contact_list { display: flex; flex-direction: column; background-color: var(--white); border: 1px solid var(--black); transform: translateY(-20px); border-bottom-right-radius: 10px;  border-bottom-left-radius: 10px; display: none; transition: 0.3s;}
+.tech .tech_title .contact_me a {text-align: center; padding: 10px 0; font-weight: bold; transition: 0.3s;}
+.tech .tech_title .contact_me a:hover {background-color: #dadada;}
+.tech .tech_title .contact_me .e-mail {padding-top: 30px;}
+.tech .tech_title .contact_me .git {border-top: 1px solid var(--black); border-bottom: 1px solid var(--black);}
+.tech .tech_title .contact_me .insta {border-bottom: 1px solid var(--black);}
+.tech .tech_title .contact_me .note {padding-bottom: 15px; border-bottom-right-radius: 10px;  border-bottom-left-radius: 10px;}
+
+.contact_box.active_contact svg {
+    transform: rotate(180deg); /* 180도 회전 */
+  }
+  
+.contact_box.active_contact + .contact_list {
+ display: flex!important; 
+}
+
+.tech .tech_title .contact_box {display: inline-flex; align-items: center; position: relative; z-index: 2;}
+.tech .tech_title .contact_box svg {fill: var(--white); transition: 0.3s;}
 .contact_box:hover {transform: scale(1)!important;}
+
+
+
+
+
 
 .tech .tech_box {width: 60%; padding: 0 2.5%;}
 .tech .tech_box li { display: flex; gap: 10%; border-bottom: 1px solid var(--black); padding: 5% 0;}
