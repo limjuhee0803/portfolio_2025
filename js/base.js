@@ -24,14 +24,33 @@ $(window).on('scroll', () => {
   let currentScroll = window.scrollY;
 
   if (prevScroll > currentScroll) {
-    // 스크롤을 올리면 헤더가 보이도록 설정
     $('header').css({ top: 0 });
   } else {
-    // 스크롤을 내리면 헤더가 숨도록 설정
-    $('header').css({ top: '-70px' }); // 헤더의 높이만큼 올라가게 설정
+    $('header').css({ top: '-70px' });
   }
 
   prevScroll = currentScroll;
+});
+
+// header 스크롤 이동 함수
+function scrollToSection(targetId) {
+  const target = document.getElementById(targetId);
+  if (window.lenisInstance) {
+    window.lenisInstance.scrollTo(target, { 
+      duration: 2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
+    });
+  }
+}
+
+document.getElementById('work_scroll').addEventListener('click', function(event) {
+  event.preventDefault(); 
+  scrollToSection('work'); 
+});
+
+document.getElementById('about_scroll').addEventListener('click', function(event) {
+  event.preventDefault();
+  scrollToSection('about');
 });
 
 
@@ -71,9 +90,10 @@ window.addEventListener("scroll", function () {
   }
 });
 
+
 //프로젝트 스와이퍼
 var hobby_swiper = new Swiper(".slideSwiper", {
-  slidesPerView: 1.5,
+  slidesPerView: 3.5,
   spaceBetween: 20,
   slideToClickedSlide : true,
   navigation:{

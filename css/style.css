@@ -138,6 +138,7 @@ main {margin-bottom: 260px;}
 
 .tech .tech_title .contact_box {display: inline-flex; align-items: center;}
 .tech .tech_title .contact_box svg {fill: var(--white);}
+.contact_box:hover {transform: scale(1)!important;}
 
 .tech .tech_box {width: 60%; padding: 0 2.5%;}
 .tech .tech_box li { display: flex; gap: 10%; border-bottom: 1px solid var(--black); padding: 5% 0;}
@@ -159,21 +160,13 @@ main {margin-bottom: 260px;}
 .gallery .slideSwiper {padding: 0 2.5% 100px;}
 .gallery .slideSwiper h3 {font-size: 14px; margin-top: 20px;}
 
-/* footer */
-footer {background-color: var(--black); color: var(--white); height: 260px; width: 100vw; position: fixed; bottom: 0; z-index: -1;}
-footer .footer_flex{display: flex; align-items: center; justify-content: space-between; width: 95%; margin: 50px auto 20px;}
-footer .footer_flex .thanks{text-align: left;}
-footer .footer_flex .thanks h3{line-height: 1.5;}
+.gallery .slideSwiper a {position: relative;}
+.gallery .slideSwiper a img {transition: 0.3s;}
+.gallery .slideSwiper .base_btn {position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); font-size: 13px; transition: 0.3s; display: none;} 
 
-footer .footer_flex .contact{text-align: right;}
-footer .footer_flex .contact h2{font-size: 1.8rem; font-weight: bold; margin-bottom: 10px;}
-footer .footer_flex .contact h3{font-size: 1rem;}
-footer h4 {text-align: center; font-size: 12px; margin-top: 30px;}
+.gallery .slideSwiper a:hover img{filter: brightness(0.2);}
+.gallery .slideSwiper a:hover .base_btn{display: block;}
 
-footer .footer_link { display: flex; justify-content: center; gap: 2%; align-items: center;}
-footer .footer_link li{}
-footer .footer_link li a{}
-footer .footer_link li a img{width: auto; filter: opacity(0.5);}
 
 /*노트북 & PC : 1024px-*/
 @media all and (min-width:1024px){

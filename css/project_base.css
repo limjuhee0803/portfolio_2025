@@ -1,0 +1,152 @@
+@charset "utf-8";
+main { margin-bottom: 260px;}
+
+/* 프로젝트 고정 정보 */
+.project_info_section {display: flex; height: auto;}
+.project_title {height: 100vh; position: sticky; top: 0; background-color: #111111; width: 30%; color: #fff; box-sizing: border-box; border-right: #77777759 solid 1px; display: flex; flex-direction: column; justify-content: center; padding: 3%;}
+.project_title h1 {font-weight: bold;}
+.project_title h3 {font-size: 1rem; color: #fff; margin-top: 15px; font-family: var(--kr-font);}
+.project_title .view_more {margin-top: 40%;}
+.project_title .view_more h2 {border-bottom: 1px solid var(--gray); display: inline; padding: 0 5px 10px;}
+.sub_info {margin-top: 50px; line-height: 1.7; color:var(--gray); font-size: 0.9rem; font-family: var(--kr-font);}
+
+/* 뒤로가기 버튼 */
+.back_btn { position: absolute; bottom: 3%; width: 45px; height: 45px; border-radius: 50%; background-color: #d1d1d180; display: flex; justify-content: center; align-items: center; cursor: pointer;}
+.back_btn svg{ width: 20px; margin-left: 5px;}
+
+/* 진행 스크롤 */
+.progress_bar { position: fixed; top: 0; left: 0; width: 100%; height: 10px; z-index: 9999; overflow: hidden;}
+.progress_bar .rail { height: 10px; background-color: #00000094; }
+.progress_bar .bar { position: absolute; top: 0; left: 0; width: 100%; height: 10px; background-color: var(--gray); transform: translate3d(-100%, 0, 0); transition: transform 0.2s; animation-timing-function: cubic-bezier(0.8, 0.18, 0.24, 0.84);}
+
+.project_info {width: 70%; padding: 50px; background-color: #111111;}
+.main_mockup {border-radius: 20px; display: block; width: 55%; margin: 100px auto 0; }
+
+.info_box {color: #fff; text-align: center; margin: 200px 0;}
+.info_box h1{font-size: 2rem;}
+.info_box h2{color: #B7B7B7; width: 60%; margin: 0 auto; line-height: 1.8;}
+.info_box h2 strong{color: #fff;}
+
+.info01 h2 {margin-top: 30px; font-family: var(--kr-font)}
+.info01 a {text-align: center; border-bottom: #444545 1px solid; color: #444545; display: inline-block; margin-top: 40px; font-size: 0.8rem; font-family: var(--kr-font);}
+.info_box .vision { margin-top: 50px; display: flex; flex-direction: column; gap: 20px; text-align: left;}
+.info_box .vision li{background-color: #1F1F1F; width: 60%; margin: 0 auto; padding: 20px; border-radius: 20px; color: #B7B7B7;}
+.info_box .vision li strong {margin-right: 20px; color: #fff;}
+.info_box .vision li span {color: #fff; font-weight: 600;}
+
+.design_system {display: flex; justify-content: center; align-items: start; gap: 15%; margin: 50px auto; width: 60%;}
+.design_system h3 {text-align: left; margin-bottom: 20px; color: var(--gray);}
+.design_system .color { display: flex; gap: 20px;}
+.design_system .color li{ display: flex; flex-direction: column;}
+.design_system .color li h4{margin-top: 10px; color: #B7B7B7;}
+.design_system .color li .color_box {width: 80px; height: 80px; border-radius: 20px;}
+.design_system .color li .color01 {background-color: #08090B;}
+.design_system .color li .color02 {background-color: #444545;}
+.design_system .color li .color03 {background-color: #DADADA;}
+.design_system .color li .color04 {background-color: #FFFFFF;}
+
+.publishing_point { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin: 50px 0;}
+.publishing_point li{background-color: #1F1F1F; padding: 10px 40px; border-radius: 20px; cursor: pointer; transition: 0.3s;}
+.publishing_point li h3{ font-weight: 600;}
+.publishing_section .show_contents {width: 60%; border-radius: 20px; margin: 0 auto 50px;}
+.publishing_section h2 strong {color: #fff;}
+.publishing_section .show_contents .change_img {border-radius: 20px; object-fit: cover;}
+
+.publishing_point li.active_contents {background-color: #fff; color: var(--black);}
+
+
+.info04 h2 {width: 60%; margin: 50px auto 0; line-height: 1.8; font-family: var(--kr-font);}
+
+.view_project { text-align: center; color: var(--black); margin: 80px auto 0;  font-size: 1rem; font-weight: bold; display: inline-block; line-height: 2; background-color: #fff; border-radius: 20px; padding: 3px 20px; transition: 0.3s;}
+
+.badee .color01 {background-color: #000!important; border: 1px solid #2c2c2c;}
+.badee .color02 {background-color: #fff!important;}
+.badee .color03 {background-color: #ff2448!important;}
+.badee .color04 {background-color: #00ffe9!important;}
+
+.anglan .view_more_box {margin-top: 40%; display: flex; gap: 30px;}
+.anglan .view_more{ margin-top: 0;}
+.anglan .view_project {margin: 80px 10px 0;}
+.anglan .main_mockup {width: 75%;}
+
+.beteran .main_mockup {border-radius: 0; width: 50%;}
+.beteran .color01 {background-color: #FCBC1D!important;}
+.beteran .color02 {background-color: #2A6FB0!important;}
+.beteran .color03 {background-color: #000!important; border: 1px solid #2c2c2c;}
+.beteran .color04 {background-color: #fff!important;}
+.beteran .projectSwiper { margin: 50px 0; padding-left: 20%;}
+
+
+.catdog .project_info, .catdog .project_title {background-color: #fff; color: var(--black);}
+.catdog .project_title h3,.catdog .info_box, .catdog .info_box h2 strong {color: var(--black);}
+.catdog .info_box h2 {color: #4b4b4b;}
+.catdog .project_info .publishing_point li.active_contents, .catdog .progress_bar .bar {background-color:#FBCA63; color: #fff;}
+.catdog .project_info .publishing_point li, .catdog .view_project {background-color: var(--gray);}
+.character img, .catdog_pd img {width: 70%; margin: 80px auto 0;}
+.catdog_pd .pd_point {display: flex; flex-wrap: wrap; gap: 20px; width: 80%; justify-content: center;  margin: 30px auto;}
+.catdog_pd .pd_point li{background-color: var(--light-gray); width: 30%; border-radius: 20px;}
+.catdog_pd .pd_point li h2{line-height: 1; width: 100%; margin: 0; padding: 15px 0; font-size: 1rem; font-weight: 500;}
+
+.catdog .color01 {background-color: #142B6F!important;}
+.catdog .color02 {background-color: #FBCA63!important;}
+.catdog .color03 {background-color: #FFFFFF!important; border: 1px solid #e4e4e4;}
+
+.solid .main_mockup {border-radius: 0; width: 70%;}
+.solid .solidSwiper {margin: 100px 0 20px; margin-left: 20%;}
+
+.solid .point_hash { display: flex;  margin-left: 20%; gap: 20px;}
+.solid .point_hash li{ color: #969696; font-size: 1rem;}
+
+/* PC (1024px 이상) */
+@media only screen and (min-width: 1024px) {
+  .pc_br {display: block;}
+  .project_title h1 {font-size: 3rem;}
+  .view_project:hover { background-color: #2181FA;  color: #fff;}
+  }
+  
+/* Tablet (768px ~ 1023px) */
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+  .project_title h1 {font-size: 2rem;}
+  .info_box h2, .info_box .vision li, .design_system, .publishing_section .show_contents, .info04 h2{width: 80%;}
+  }
+  
+
+/* Mobile (최대 767px) */
+@media only screen and (max-width: 767px) {
+  .project_info_section {flex-direction: column;}
+  .project_title {width: 100%; height: auto; padding: 20px; border-bottom:#1F1F1F solid 1px; z-index: 5;}
+  .project_info {width: 100%;}
+
+  .project_title h1 {font-size: 1.3rem;}
+  .project_title h3 {font-size: 0.8rem;}
+  .project_title .view_more {margin-top: 20px;}
+
+  .main_mockup {width: 80%; margin-top: 30px;}
+
+  .info_box {margin: 100px 0;}
+  .info_box h1 {font-size: 1.2rem;}
+  .info_box h2 { width: 100%; font-size: 0.9rem;}
+  .info_box .vision li {width: 100%; line-height: 1.5; font-size: 0.9rem;}
+  .info_box .vision li strong {margin-right: 10px;}
+  .project_info {padding: 20px;}
+  .design_system {flex-direction: column; gap: 50px; width: 85%; margin: 50px auto;}
+  .design_system .color {gap: 10px;}
+  .design_system .color li h4 {font-size: 0.8rem;}
+  .design_system .color li .color_box {width: 50px; height: 50px; border-radius: 10px;}
+  .publishing_point li {padding: 10px 20px; font-size: 0.9rem;}
+  .publishing_section .show_contents {width: 100%; min-height: auto;}
+
+  .info_box h2, .info_box .vision li, .publishing_section .show_contents, .info04 h2{width: 95%;}
+
+  .back_btn {position: fixed;}
+
+  .anglan .main_mockup {width: 85%;}
+  .anglan .view_project {margin: 40px 0 0;}
+  .beteran .main_mockup {width: 70%;}
+
+  .character img, .catdog_pd img {width: 85%;}
+  .catdog_pd .pd_point li {width: 95%;}
+
+  .solid .main_mockup {width: 90%;}
+  .solid .solidSwiper {margin-left: 5%; margin-top: 50px;}
+  }
