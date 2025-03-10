@@ -157,11 +157,6 @@ main {margin-bottom: 260px;}
 .tech .tech_title .contact_box svg {fill: var(--white); transition: 0.3s;}
 .contact_box:hover {transform: scale(1)!important;}
 
-
-
-
-
-
 .tech .tech_box {width: 60%; padding: 0 2.5%;}
 .tech .tech_box li { display: flex; gap: 10%; border-bottom: 1px solid var(--black); padding: 5% 0;}
 .tech .tech_box li:last-child {border-bottom: none;}
@@ -186,18 +181,16 @@ main {margin-bottom: 260px;}
 .gallery .slideSwiper a img {transition: 0.3s;}
 .gallery .slideSwiper .base_btn {position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); font-size: 13px; transition: 0.3s; display: none;} 
 
-.gallery .slideSwiper a:hover img{filter: brightness(0.2);}
-.gallery .slideSwiper a:hover .base_btn{display: block;}
-
 
 /*노트북 & PC : 1024px-*/
 @media all and (min-width:1024px){
-	
+	.gallery .slideSwiper a:hover img{filter: brightness(0.2);}
+  .gallery .slideSwiper a:hover .base_btn{display: block;}
 }
 
 /*태블릿 가로, 세로 : 768px-1023px*/
 @media all and (min-width:768px) and (max-width:1023px){
-	
+	.gallery .slideSwiper .base_btn {display: none;}
 }
 
 /*모바일 가로, 세로 : -767px*/
@@ -209,4 +202,6 @@ main {margin-bottom: 260px;}
   .main_top {background: url(../asset/image/mo_main_top.jpg) no-repeat 50% 50% / cover; height: 90vh;}
   .main_top .main_ot {width: 100%;}
   .main_top .main_typo img{height: 80px;}
+
+  .gallery .slideSwiper .base_btn {display: none;}
 }

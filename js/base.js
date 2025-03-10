@@ -33,6 +33,7 @@ $(window).on('scroll', () => {
 });
 
 // header 스크롤 이동 함수
+/*
 function scrollToSection(targetId) {
   const target = document.getElementById(targetId);
   if (window.lenisInstance) {
@@ -52,7 +53,7 @@ document.getElementById('about_scroll').addEventListener('click', function(event
   event.preventDefault();
   scrollToSection('about');
 });
-
+*/
 
 //up 버튼
 document.addEventListener("DOMContentLoaded", function () {
@@ -87,27 +88,5 @@ window.addEventListener("scroll", function () {
   // wait_scroll 요소가 화면에 90% 이상 닿으면 active 클래스 추가
   if (rect < windowHeight * 0.7) {
     waitScrollElement.classList.add("active");
-  }
-});
-
-//컨택트 박스
-document.querySelector('.contact_box').addEventListener('click', function () {
-  this.classList.toggle('active_contact');
-});
-
-//프로젝트 스와이퍼
-var hobby_swiper = new Swiper(".slideSwiper", {
-  slidesPerView: 3.5,
-  spaceBetween: 20,
-  slideToClickedSlide : true,
-  navigation:{
-      nextEl:".swiper-button-next",
-      prevEl:".swiper-button-prev",
-  },
-  breakpoints: {
-    768: {
-      slidesPerView: 6.5,
-      spaceBetween: 20.
-    }
   }
 });
