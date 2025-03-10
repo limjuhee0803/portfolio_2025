@@ -241,6 +241,8 @@ main {margin-bottom: 260px;}
   .tech .tech_box {width: 100%;}
   .tech .tech_box li {flex-direction: column; text-align: left; padding: 40px 0;} 
   .tech .tech_box li .tech_icon {width: 100%; margin-bottom:  20px;}
+  .tech .tech_title .tech_typo img {margin-bottom: 0;}
+  .tech .tech_title .contact_box {display: none;}
 
   .gallery .gallery_top {padding: 50px 5% 30px;}
   .gallery .gallery_top .gallery_title {text-align: left;}
@@ -248,5 +250,5 @@ main {margin-bottom: 260px;}
   .gallery .gallery_top .drag {display: none;}
   .gallery .slideSwiper .base_btn {display: none;}
   .gallery .slideSwiper h3 {text-align: left;}
-  .gallery .slideSwiper {padding-bottom: 50px;}
+  .gallery .slideSwiper {padding-bottom: 50px; padding: 0 5% 50px;}
 }
