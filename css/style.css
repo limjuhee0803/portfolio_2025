@@ -199,9 +199,54 @@ main {margin-bottom: 260px;}
   header .lt_logo img {width: 50px;}
   header .rt_mark {gap: 30px;}
 
+  main {text-align: center;}
   .main_top {background: url(../asset/image/mo_main_top.jpg) no-repeat 50% 50% / cover; height: 90vh;}
   .main_top .main_ot {width: 100%;}
   .main_top .main_typo img{height: 80px;}
 
+  .intro {flex-direction: column;}
+  .intro_txt {display: flex; flex-direction: column;}
+  .intro_txt h4 {line-height: 1.8;}
+  .intro .intro_ot {padding-top: 50px; width: 80%; margin: 0 auto;}
+  .wait_scroll .fade_txt {width: 95%; margin: 0 auto; object-fit: contain; height: auto;}
+  .intro .typo_event {margin-top: 20px;}
+
+  .work {flex-direction: column;}
+  .work_title {height: auto; width: 100%; border-right: none;}
+  .work_title img {width: 85%; margin: 10px 0 20px;}
+  .work .work_project {display: none;}
+  .work_title .work_btn {justify-content: center;}
+
+  .career .career_keyword {width: 95%; font-size: 14px;}
+  .career_ot {display: none;}
+  .career .career_title { padding: 50px 0;}
+  .career .career_title .title_txt img {height: 17px; object-fit: contain;}
+  .career_project li {flex-direction: column; text-align: left;}
+  .career_project li a {width: 90%;}
+  .career_project li .career_project_txt {width: 90%; margin-top: 20px;}
+  .career_project li .career_project_txt h4 {width: 100%;}
+  .career_project .lt_career {text-align: left;}
+  .career_project .lt_career a {order: 0;}
+
+  .about .about_title {margin: 0;}
+  .about .about_title .about_ot {width: 90%; top: 0;}
+  .about .about_info {flex-direction: column;}
+  .about .about_info li {width: 100%; border-right: none; border-bottom: 1px solid var(--black); text-align: left; padding: 20px 0;}
+  .about .about_info li:last-child {border-bottom: none;}
+  .about .about_info .tool li { padding: 0;}
+  .about .about_info .tool li img {width: 40%;}
+
+  .tech {flex-direction: column;}
+  .tech .tech_title {width: 90%; border-right: none; height: auto; position: relative; text-align: left;}
+  .tech .tech_box {width: 100%;}
+  .tech .tech_box li {flex-direction: column; text-align: left; padding: 40px 0;} 
+  .tech .tech_box li .tech_icon {width: 100%; margin-bottom:  20px;}
+
+  .gallery .gallery_top {padding: 50px 5% 30px;}
+  .gallery .gallery_top .gallery_title {text-align: left;}
+  .gallery .gallery_top .gallery_title h4 {line-height: 1.8;}
+  .gallery .gallery_top .drag {display: none;}
   .gallery .slideSwiper .base_btn {display: none;}
+  .gallery .slideSwiper h3 {text-align: left;}
+  .gallery .slideSwiper {padding-bottom: 50px;}
 }

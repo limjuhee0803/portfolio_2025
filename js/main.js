@@ -5,8 +5,8 @@ document.querySelector('.contact_box').addEventListener('click', function () {
   
 //프로젝트 스와이퍼
   var hobby_swiper = new Swiper(".slideSwiper", {
-    slidesPerView: 3.5,
-    spaceBetween: 20,
+    slidesPerView: 2.5,
+    spaceBetween: 10,
     slideToClickedSlide : true,
     breakpoints: {
       768: {
