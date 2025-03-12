@@ -33,7 +33,6 @@ $(window).on('scroll', () => {
 });
 
 // header 스크롤 이동 함수
-/*
 function scrollToSection(targetId) {
   const target = document.getElementById(targetId);
   if (window.lenisInstance) {
@@ -53,7 +52,6 @@ document.getElementById('about_scroll').addEventListener('click', function(event
   event.preventDefault();
   scrollToSection('about');
 });
-*/
 
 //up 버튼
 document.addEventListener("DOMContentLoaded", function () {
@@ -80,6 +78,7 @@ window.addEventListener('scroll', () => {
 
 
 // 스크롤 애니메이션
+/*
 window.addEventListener("scroll", function () {
   let waitScrollElement = document.querySelector(".wait_scroll"); // wait_scroll 요소 선택
   let rect = waitScrollElement.getBoundingClientRect().top;
@@ -90,3 +89,19 @@ window.addEventListener("scroll", function () {
     waitScrollElement.classList.add("active");
   }
 });
+*/
+
+//스크롤 이벤트
+const fadeUpObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+      fadeUpObserver.unobserve(entry.target);
+    }
+  });
+}, { 
+  threshold: 0.5,
+  rootMargin: '0px 0px -50px 0px'
+});
+
+document.querySelectorAll('.fade_up').forEach(el => fadeUpObserver.observe(el));

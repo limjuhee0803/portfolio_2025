@@ -49,27 +49,27 @@ main {margin-bottom: 260px;}
 }
 
 .intro {display: flex; justify-content: space-between; overflow: hidden;}
-.intro .typo_event {margin-top: 30px;}
+.intro .typo_event {margin-top: 30px; }
 .intro .intro_ot {padding-top: 150px;}
+.intro .fade_txt {object-fit: contain; width: auto; height: 5.5vh; margin-bottom: 10px;}
+
 
 /* creative work */
-.work {display: flex;}
-.work_title {border-right: 1px solid var(--black); width: 30%; height: 90vh; position: sticky; top: 10%;}
+.work {display: flex; padding: 100px 0;}
+.work_title {border-right: 1px solid var(--black); width: 30%; height: 90vh; position: sticky; top: 10%; padding: 0 0 0 2.5%;}
 .work_title h4{color: var(--black);}
 .work_title img{height: 3.5vh; object-fit: contain; width: auto; margin: 20px 0 30px;}
 .work_title .work_btn{display: flex; gap: 10px;}
-.work_title .work_btn h4{}
+.work_title .work_btn .base_btn:hover {transform: scale(1);}
 
 .work .work_project {width: 70%; padding: 0 2.5%;}
-.work .work_project .project {display: flex; flex-wrap: wrap;}
+.work .work_project .project {display: flex; flex-wrap: wrap; padding: 0 2.5%;}
 .work .work_project .project li {width: 50%; padding: 4% 2.5%; border-bottom: 1px solid var(--black);}
 .work .work_project .project li:nth-child(odd) {border-right: 1px solid var(--black);}
 .work .work_project .project li h2 {margin-top: 30px; font-size: 20px; font-weight: bold;}
 .work .work_project .project li h4 {margin-top: 10px; font-family: var(--kr-font);}
 
 .work .work_project .project img {transition: 0.3s;}
-.work .work_project .project li:hover img {filter: brightness(0.2);}
-.work .work_project .project li:hover .add_txt {display: flex;}
 
 .project li a {position: relative; display: block;}
 .project .add_txt {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; transition: 0.3s; display: none; flex-direction: column; justify-content: center;}
@@ -98,9 +98,6 @@ main {margin-bottom: 260px;}
 .career_project li .career_project_txt{width: 50%;}
 .career_project li .career_project_txt h2{font-size: 22px; font-weight: bold;}
 .career_project li .career_project_txt h4{margin-top: 10px; line-height: 1.8; width: 70%; font-family: var(--kr-font);}
-
-.career_project li a:hover img {filter: brightness(0.2);}
-.career_project li a:hover .project_point {display: flex;}
 
 .career_project li .project_point {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: var(--white); display: none; gap: 10px; transition: 0.3s;}
 
@@ -139,7 +136,6 @@ main {margin-bottom: 260px;}
 .tech .tech_title .contact_me { display: flex; flex-direction: column; width: 160px;}
 .tech .tech_title .contact_me .contact_list { display: flex; flex-direction: column; background-color: var(--white); border: 1px solid var(--black); transform: translateY(-20px); border-bottom-right-radius: 10px;  border-bottom-left-radius: 10px; display: none; transition: 0.3s;}
 .tech .tech_title .contact_me a {text-align: center; padding: 10px 0; font-weight: bold; transition: 0.3s;}
-.tech .tech_title .contact_me a:hover {background-color: #dadada;}
 .tech .tech_title .contact_me .e-mail {padding-top: 30px;}
 .tech .tech_title .contact_me .git {border-top: 1px solid var(--black); border-bottom: 1px solid var(--black);}
 .tech .tech_title .contact_me .insta {border-bottom: 1px solid var(--black);}
@@ -184,13 +180,22 @@ main {margin-bottom: 260px;}
 
 /*노트북 & PC : 1024px-*/
 @media all and (min-width:1024px){
-	.gallery .slideSwiper a:hover img{filter: brightness(0.2);}
+  .work .work_project .project li:hover img {filter: brightness(0.2);}
+  .work .work_project .project li:hover .add_txt {display: flex;}
+
+  .career_project li a:hover img {filter: brightness(0.2);}
+  .career_project li a:hover .project_point {display: flex;}
+
+  .tech .tech_title .contact_me a:hover {background-color: #dadada;}
+
+  .gallery .slideSwiper a:hover img{filter: brightness(0.2);}
   .gallery .slideSwiper a:hover .base_btn{display: block;}
 }
 
 /*태블릿 가로, 세로 : 768px-1023px*/
 @media all and (min-width:768px) and (max-width:1023px){
 	.gallery .slideSwiper .base_btn {display: none;}
+  .gallery .slideSwiper h3 {display: none;}
 }
 
 /*모바일 가로, 세로 : -767px*/
@@ -208,14 +213,16 @@ main {margin-bottom: 260px;}
   .intro_txt {display: flex; flex-direction: column;}
   .intro_txt h4 {line-height: 1.8;}
   .intro .intro_ot {padding-top: 50px; width: 80%; margin: 0 auto;}
-  .wait_scroll .fade_txt {width: 95%; margin: 0 auto; object-fit: contain; height: auto;}
+  .fade_txt {width: 95%; margin: 0 auto; object-fit: contain; height: auto; }
   .intro .typo_event {margin-top: 20px;}
 
-  .work {flex-direction: column;}
-  .work_title {height: auto; width: 100%; border-right: none;}
+  .work {flex-direction: column; padding: 50px 0;}
+  .work_title {height: auto; width: 100%; border-right: none; position: relative; top: 0; padding: 0;}
   .work_title img {width: 85%; margin: 10px 0 20px;}
-  .work .work_project {display: none;}
+  .work .work_project {width: 100%; padding: 0;}
   .work_title .work_btn {justify-content: center;}
+  .work .project_swiper {margin-top: 30px; padding-left: 5%;}
+  .work .project_swiper h2{ text-align: left; margin-top: 10px; font-size: 16px; font-family: var(--kr-font);}
 
   .career .career_keyword {width: 95%; font-size: 14px;}
   .career_ot {display: none;}
@@ -224,6 +231,7 @@ main {margin-bottom: 260px;}
   .career_project li {flex-direction: column; text-align: left;}
   .career_project li a {width: 90%;}
   .career_project li .career_project_txt {width: 90%; margin-top: 20px;}
+  .career_project li .career_project_txt h2 {font-size: 20px;}
   .career_project li .career_project_txt h4 {width: 100%;}
   .career_project .lt_career {text-align: left;}
   .career_project .lt_career a {order: 0;}
@@ -232,9 +240,12 @@ main {margin-bottom: 260px;}
   .about .about_title .about_ot {width: 90%; top: 0;}
   .about .about_info {flex-direction: column;}
   .about .about_info li {width: 100%; border-right: none; border-bottom: 1px solid var(--black); text-align: left; padding: 20px 0;}
+  .about .about_info li h3 {font-size: 20px;}
   .about .about_info li:last-child {border-bottom: none;}
   .about .about_info .tool li { padding: 0;}
   .about .about_info .tool li img {width: 40%;}
+  .tech .tech_box li .tech_icon {align-items: center;}
+  .tech .tech_box li .tech_icon h2 {font-size: 20px;}
 
   .tech {flex-direction: column;}
   .tech .tech_title {width: 90%; border-right: none; height: auto; position: relative; text-align: left;}
@@ -246,9 +257,10 @@ main {margin-bottom: 260px;}
 
   .gallery .gallery_top {padding: 50px 5% 30px;}
   .gallery .gallery_top .gallery_title {text-align: left;}
+  .gallery .gallery_top .gallery_title h2 {font-size: 20px;}
   .gallery .gallery_top .gallery_title h4 {line-height: 1.8;}
   .gallery .gallery_top .drag {display: none;}
   .gallery .slideSwiper .base_btn {display: none;}
-  .gallery .slideSwiper h3 {text-align: left;}
+  .gallery .slideSwiper h3 {display: none;}
   .gallery .slideSwiper {padding-bottom: 50px; padding: 0 5% 50px;}
 }
