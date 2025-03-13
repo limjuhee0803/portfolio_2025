@@ -42,6 +42,14 @@ h4 strong{color: var(--black);}
 .up_btn { width: 45px; height: 45px; border-radius: 50%; background-color: #11111179; position: fixed; bottom: 5%; right: 5%; display: flex; justify-content: center; align-items: center; cursor: pointer; z-index: 9999;}
 .up_btn svg {pointer-events: none; transition: 0.3s;}
 
+/* header */
+header { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; transition: top 0.3s ease; }
+header .flex { width: 95%; height: 70px; justify-content: space-between; align-items: center; margin: 0 auto; }
+header .up{cursor: pointer;}
+header .lt_logo img {width: 70px;}
+header .rt_mark {display: flex; gap: 50px;}
+header .rt_mark a {text-transform: capitalize; font-size: 16px;}
+
 /* footer */
 footer {background-color: var(--black); color: var(--white); height: 260px; width: 100vw; position: fixed; bottom: 0; z-index: -1;}
 footer .footer_flex{display: flex; align-items: center; justify-content: space-between; width: 95%; margin: 50px auto 20px;}

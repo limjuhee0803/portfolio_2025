@@ -1,13 +1,5 @@
 @charset "utf-8";
 
-/* header */
-header { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; transition: top 0.3s ease; }
-header .flex { width: 95%; height: 70px; justify-content: space-between; align-items: center; margin: 0 auto; }
-header .up{cursor: pointer;}
-header .lt_logo img {width: 70px;}
-header .rt_mark {display: flex; gap: 50px;}
-header .rt_mark a {text-transform: capitalize; font-size: 16px;}
-
 main {margin-bottom: 260px;}
 .main_top {width: 100%; height: 100vh; background: url(../asset/image/pc_main_top.jpg) no-repeat 50% 50% / cover; position: sticky; top: 0; overflow: hidden; }
 .main_top .main_ot{width: 90%; margin: 0 auto; position: relative; animation: ot_slide 1s ease-out forwards; min-height: 800px;}
@@ -177,14 +169,13 @@ main {margin-bottom: 260px;}
 .gallery .slideSwiper a img {transition: 0.3s;}
 .gallery .slideSwiper .base_btn {position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); font-size: 13px; transition: 0.3s; display: none;} 
 
-
 /*노트북 & PC : 1024px-*/
 @media all and (min-width:1024px){
   .work .work_project .project li:hover img {filter: brightness(0.2);}
   .work .work_project .project li:hover .add_txt {display: flex;}
 
-  .career_project li a:hover img {filter: brightness(0.2);}
-  .career_project li a:hover .project_point {display: flex;}
+  /* .career_project li a:hover img {filter: brightness(0.2);}
+  .career_project li a:hover .project_point {display: flex;} */
 
   .tech .tech_title .contact_me a:hover {background-color: #dadada;}
 
