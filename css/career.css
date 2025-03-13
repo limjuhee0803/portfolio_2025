@@ -10,7 +10,8 @@ main {margin-bottom: 260px;}
 .project_title {padding-left: 2.5%;}
 
 .project_thumb {display: flex; gap: 10%; width: 90%; margin: 0 auto;}
-.project_thumb img:nth-child(1) {width: 40%;}
+.project_thumb .before {width: 40%; display: flex; flex-direction: column; gap: 10px;}
+.project_thumb .before h4 {text-align: center;}
 .project_thumb img:nth-child(2) { width: 60%; object-fit: contain;}
 
 .project_img img {margin: 50px 0;}
@@ -46,5 +47,9 @@ img{ object-fit: cover; width: 100%;}
     .project_img img {margin: 20px 0;}
     .project_img img:last-child {margin-bottom: 50px;}
 
-    .career .contents_link li{width: 50%;}
+    .career .contents_link {width: 90%;}
+    .career .contents_link li{width: 50%; padding: 0 5px;}
+    .career img {margin-bottom: 50px;}
+    .career .contents_link li h3 {display: none;}
+    .career .contents_link li h2 {font-size: 8px; margin: 5px 0 20px;}
 }
