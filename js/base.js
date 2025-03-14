@@ -1,3 +1,5 @@
+
+
 //부드러운 스크롤
 document.addEventListener("DOMContentLoaded", function () {
     if (window.innerWidth > 768 && !window.lenisInstance) {
