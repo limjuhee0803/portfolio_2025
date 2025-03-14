@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // header
+/*
 let prevScroll = window.scrollY;
 
 $(window).on('scroll', () => {
@@ -32,7 +33,7 @@ $(window).on('scroll', () => {
 
   prevScroll = currentScroll;
 });
-
+*/
 
 //뒤로가기 버튼
 document.addEventListener("DOMContentLoaded", function () {
