@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     if (window.innerWidth > 768 && !window.lenisInstance) {
       const lenis = new Lenis({
-        duration: 3,
+        duration: 2.5,
         easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       });
   
@@ -105,3 +105,4 @@ const fadeUpObserver = new IntersectionObserver((entries) => {
 });
 
 document.querySelectorAll('.fade_up').forEach(el => fadeUpObserver.observe(el));
+
