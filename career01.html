@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>01.Branding & Product Design</title>
+  <title>02.UI / UX Revamp</title>
 
   <!-- open graph -->
   <!-- <meta property="og:title" content="limjuhee's portfolio">
@@ -19,7 +19,7 @@
 
   <!-- 공통 css -->
   <link rel="stylesheet" href="./css/base.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/career.css">
 
 </head>
 
@@ -28,17 +28,15 @@
   <header>
     <div class="flex">
       <div class="lt_logo">
-        <img src="./asset/image/jh_logo.png" alt="jh로고"  class="up">
-      </div>
-  
-      <div class="rt_mark">
-        <a href="#" id="back">Back</a>
+        <a href="./index.html">
+          <img src="./asset/image/jh_logo.png" alt="jh로고">
+        </a>
       </div>
     </div>
   </header>
 
   <!-- up 버튼 -->
-  <div class="up up_btn">
+  <div class="up_btn"  id="back">
     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F9F9F9">
       <path d="M460-200v-483.15L228.31-451.46 200-480l280-280 280 280-28.31 28.54L500-683.15V-200h-40Z"/>
     </svg>
@@ -46,7 +44,24 @@
 
   <!-- 메인 영역 -->
   <main>
+    <div class="catdog">
+      <div class="catdog_ct">
+        <img src="./asset/image/catdog01.jpg" alt="" class="intro">
+        <img src="./asset/image/catdog02.jpg" alt="">
+        <img src="./asset/image/catdog03.jpg" alt="">
+        <img src="./asset/image/catdog04.jpg" alt="" class="last_intro">
+      </div>
+      <div class="catdog_web">
+        <img src="./asset/image/catdog05.jpg" alt="">
+        <img src="./asset/image/catdog06.jpg" alt="">
+      </div>
 
+      <div class="catdog_pd">
+        <img src="./asset/image/catdog08.jpg" alt="">
+        <img src="./asset/image/catdog09.jpg" alt="">
+        <img src="./asset/image/catdog10.jpg" alt="">
+      </div>
+    </div>
 
   </main>
 
@@ -97,7 +112,7 @@
   <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="./js/base.js"></script>
+  <!-- <script src="./js/base.js"></script> -->
   <script src="./js/career.js"></script>
 </body>
 

@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-main {margin-bottom: 260px;}
+main {margin-bottom: 260px; background-color: #fff;}
 #back {cursor: pointer;}
 
 .career_project, .career  {font-family: var(--kr-font); background-color: #fff;}
@@ -15,7 +15,7 @@ main {margin-bottom: 260px;}
 .project_thumb img:nth-child(2) { width: 60%; object-fit: contain;}
 
 .project_img img {margin: 50px 0;}
-.project_img img:last-child {margin-bottom: 100px;}
+.project_img img:last-child {padding-bottom: 100px;}
 
 img{ object-fit: cover; width: 100%;}
 
@@ -27,8 +27,15 @@ img{ object-fit: cover; width: 100%;}
 .career .contents_link li img {margin: 0; transition: 0.3s;}
 .career .contents_link li h2 {font-size: 22px; color: var(--black); font-weight: bold; margin-top: 20px;}
 .career .contents_link li h3 {font-size: 18px; color: var(--gray); margin-top: 10px; margin-bottom: 50px;}
-
+.career .last {margin-bottom: 100px;}
 .career .contents_link .base_btn {position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); transition: 0.3s; display: none;}
+
+.catdog {background-color: #fff;}
+.catdog .intro{ margin-top: 200px!important;}
+.catdog .catdog_ct img{margin: 50px 0;}
+.catdog .last_intro{margin: 0!important;}
+
+#back svg {transform: rotate(-90deg);}
 
 /*노트북 & PC : 1024px-*/
 @media all and (min-width:1024px){
@@ -42,14 +49,22 @@ img{ object-fit: cover; width: 100%;}
 
 /*모바일 가로, 세로 : -767px*/
 @media all and (max-width:767px){
-    .career_project  {padding-top: 50px;}
+    .career_project h1 {font-size: 22px;}
+    .career_project h2 {font-size: 14px;}
+    .career_project  {padding-top: 100px;}
+    .career_project:last-child  {padding-top: 30px;}
+    .project_thumb {flex-direction: column; gap: 50px; width: 100%;}
+    .project_thumb .before {width: 100%;}
+    .project_thumb img:nth-child(2) {width: 100%;}
+
     .project_title {padding-left: 5%;}
-    .project_img img {margin: 20px 0;}
-    .project_img img:last-child {margin-bottom: 50px;}
+    .project_img img {margin: 30px 0;}
+    .project_img img:last-child {padding-bottom: 50px;}
 
     .career .contents_link {width: 90%;}
     .career .contents_link li{width: 50%; padding: 0 5px;}
     .career img {margin-bottom: 50px;}
     .career .contents_link li h3 {display: none;}
     .career .contents_link li h2 {font-size: 8px; margin: 5px 0 20px;}
+    .career .last {padding-bottom: 50px;}
 }
