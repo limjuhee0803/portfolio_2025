@@ -170,10 +170,6 @@ main {margin-bottom: 260px;}
 .gallery .slideSwiper a img {transition: 0.3s;}
 .gallery .slideSwiper .base_btn {position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); font-size: 13px; transition: 0.3s; display: none;} 
 
-.strength {}
-.strength .strength_title{}
-.strength .strength_title h4{}
-.strength .strength_title .strength_typo{}
 .strength .strength_title .strength_typo img{ height: 3.5vh; object-fit: contain; width: auto; margin-top: 10px;}
 .strength .strength_box {display: flex; gap: 20px; margin: 50px 0 100px;}
 .strength .strength_box li{ width: 33.3333%;}
@@ -192,9 +188,6 @@ main {margin-bottom: 260px;}
 @media all and (min-width:1024px){
   .work .work_project .project li:hover img {filter: brightness(0.2);}
   .work .work_project .project li:hover .add_txt {display: flex;}
-
-  /* .career_project li a:hover img {filter: brightness(0.2);}
-  .career_project li a:hover .project_point {display: flex;} */
 
   .tech .tech_title .contact_me a:hover {background-color: #dadada;}
 
