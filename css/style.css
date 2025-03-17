@@ -16,7 +16,6 @@ main {margin-bottom: 260px;}
   }
 }
 
-.main_top .main_typo {}
 .main_top .main_typo .main_typo01{left: -3%; top: 10%; animation: typo_design 0.7s ease-out forwards; position: absolute;}
 .main_top .main_typo img{height: 160px; height: 15vh; object-fit: contain; width: auto;}
 .main_top .main_typo .main_typo01 h4 {margin-left: 15%;}
@@ -101,9 +100,7 @@ main {margin-bottom: 260px;}
 .career_project .lt_career .career_project_txt{ order: 0;}
  
 /* 어바웃미 */
-.about {}
 .about .about_title{margin-top: 100px;}
-.about .about_title .about_typo{}
 .about .about_title .about_typo img{height: 5vh; object-fit: contain; margin-bottom: 40px;}
 .about .about_title .about_ot{width: 40%; margin: 0 auto; display: block; position: relative; top: -120px;}
 
@@ -122,8 +119,6 @@ main {margin-bottom: 260px;}
 /* 기술스택 */
 .tech {display: flex;}
 .tech .tech_title{border-right: 1px solid var(--black); width: 40%; height: 90vh; position: sticky; top: 10%;}
-.tech .tech_title h4{}
-.tech .tech_title .tech_typo{}
 .tech .tech_title .tech_typo img{ height: 3.5vh; object-fit: contain; width: auto; margin: 10px 0 20px;}
 
 .tech .tech_title .contact_me { display: flex; flex-direction: column; width: 160px;}
@@ -134,13 +129,8 @@ main {margin-bottom: 260px;}
 .tech .tech_title .contact_me .insta {border-bottom: 1px solid var(--black);}
 .tech .tech_title .contact_me .note {padding-bottom: 15px; border-bottom-right-radius: 10px;  border-bottom-left-radius: 10px;}
 
-.contact_box.active_contact svg {
-    transform: rotate(180deg); /* 180도 회전 */
-  }
-  
-.contact_box.active_contact + .contact_list {
- display: flex!important; 
-}
+.contact_box.active_contact svg {transform: rotate(180deg);}
+.contact_box.active_contact + .contact_list { display: flex!important;}
 
 .tech .tech_title .contact_box {display: inline-flex; align-items: center; position: relative; z-index: 2;}
 .tech .tech_title .contact_box svg {fill: var(--white); transition: 0.3s;}
@@ -152,24 +142,10 @@ main {margin-bottom: 260px;}
 .tech .tech_box li .tech_icon {display: flex; gap: 10px; width: 25%;}
 .tech .tech_box li .tech_icon img { width: 35px; height: 35px; object-fit: contain;}
 .tech .tech_box li .tech_icon h2 {font-size: 24px; font-weight: bold;}
-
-.tech .tech_box li .tech_info {}
 .tech .tech_box li .tech_info li{border-bottom: none; padding: 0;}
 .tech .tech_box li .tech_info li h4{ line-height: 2; font-family: var(--kr-font);}
 
-/* 디자인 갤러리 */
-.gallery {}
-.gallery .gallery_top{ padding: 100px 2.5% 50px; display: flex; justify-content: space-between; align-items: end;}
-.gallery .gallery_top .gallery_title{}
-.gallery .gallery_top .gallery_title h2{font-size: 24px; font-weight: bold;}
-.gallery .gallery_top .gallery_title h4{margin-top: 10px; font-family: var(--kr-font);}
-.gallery .slideSwiper {padding: 0 2.5% 100px;}
-.gallery .slideSwiper h3 {font-size: 14px; margin-top: 20px;}
-
-.gallery .slideSwiper a {position: relative;}
-.gallery .slideSwiper a img {transition: 0.3s;}
-.gallery .slideSwiper .base_btn {position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); font-size: 13px; transition: 0.3s; display: none;} 
-
+/* 강점 */
 .strength .strength_title .strength_typo img{ height: 3.5vh; object-fit: contain; width: auto; margin-top: 10px;}
 .strength .strength_box {display: flex; gap: 20px; margin: 50px 0 100px;}
 .strength .strength_box li{ width: 33.3333%;}
@@ -191,16 +167,12 @@ main {margin-bottom: 260px;}
 
   .tech .tech_title .contact_me a:hover {background-color: #dadada;}
 
-  .gallery .slideSwiper a:hover img{filter: brightness(0.2);}
-  .gallery .slideSwiper a:hover .base_btn{display: block;}
-
   .strength .strength_box li:hover img{filter: grayscale(0);}
 }
 
 /*태블릿 가로, 세로 : 768px-1023px*/
 @media all and (min-width:768px) and (max-width:1023px){
-	.gallery .slideSwiper .base_btn {display: none;}
-  .gallery .slideSwiper h3 {display: none;}
+
 }
 
 /*모바일 가로, 세로 : -767px*/
@@ -261,15 +233,6 @@ main {margin-bottom: 260px;}
   .tech .tech_box li .tech_icon {width: 100%; margin-bottom:  20px;}
   .tech .tech_title .tech_typo img {margin-bottom: 0;}
   .tech .tech_title .contact_box {display: none;}
-
-  .gallery .gallery_top {padding: 50px 5% 30px;}
-  .gallery .gallery_top .gallery_title {text-align: left;}
-  .gallery .gallery_top .gallery_title h2 {font-size: 20px;}
-  .gallery .gallery_top .gallery_title h4 {line-height: 1.8;}
-  .gallery .gallery_top .drag {display: none;}
-  .gallery .slideSwiper .base_btn {display: none;}
-  .gallery .slideSwiper h3 {display: none;}
-  .gallery .slideSwiper {padding-bottom: 50px; padding: 0 5% 50px;}
 
   .strength .strength_title {text-align: left;}
   .strength .strength_title .strength_typo img {height: 2.5vh;}

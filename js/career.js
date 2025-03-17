@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
     if (backButton) {
       backButton.addEventListener("click", function () {
-        window.history.back(); // 이전 페이지로 이동
+        window.history.back();
       });
     }
   });
@@ -57,14 +57,4 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
-});
-
-window.addEventListener('scroll', () => {
-  const mainOt = document.querySelector('.main_ot');
-  let scale = 1 + window.scrollY / 3000;
-
-  if (scale > 1.6) {
-    scale = 1.6;
-  }
-  mainOt.style.transform = `scale(${scale})`;
 });

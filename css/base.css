@@ -1,9 +1,4 @@
 @charset "utf-8";
-
-/* 
-h2는 22px 프로젝트 타이틀 
-h4는 16px 설명글
-*/
 :root {
     --kr-font: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui,
       Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR',
@@ -29,12 +24,6 @@ h4 strong{color: var(--black);}
 .section {padding: 100px 2.5%;}
 .line {border: 0.5px solid var(--gray); width: 95%; margin: 0 auto;}
 
-/* 스크롤 페이드업 효과 */
-/*
-.fade_up { opacity: 0; transform: translateY(60px); transition: opacity 0.8s cubic-bezier(0.25, 0.8, 0.25, 1),  transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1); will-change: opacity, transform;}
-.fade_up.show { opacity: 1; transform: translateY(0);}
-*/
-
 .fade_up {
   opacity: 0;
   transform: translateY(60px);
@@ -53,8 +42,6 @@ h4 strong{color: var(--black);}
 .slow_fade {transition-delay: 0.5s;}
 .slow_fade01 {transition-delay: 0.3s;}
 .slow_fade02 {transition-delay: 0.6s;}
-
-
 
 /* 스크롤 무빙 (rt) */
 .wait_scroll .mov_rt {transform: translateX(100%);}
@@ -83,8 +70,6 @@ footer .footer_flex .contact h3{font-size: 1rem;}
 footer h4 {text-align: center; font-size: 12px; margin-top: 30px;}
 
 footer .footer_link { display: flex; justify-content: center; gap: 2%; align-items: center;}
-footer .footer_link li{}
-footer .footer_link li a{}
 footer .footer_link li a img{width: auto; filter: opacity(0.5);}
 
 .wt_footer {background-color: var(--white); color: var(--black);}
