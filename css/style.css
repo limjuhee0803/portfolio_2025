@@ -182,9 +182,31 @@ main {margin-bottom: 260px;}
   header .rt_mark {gap: 30px;}
 
   main {text-align: center;}
-  .main_top {background: url(../asset/image/mo_main_top.jpg) no-repeat 50% 50% / cover; height: 90vh;}
+  .main_top {background: url(../asset/image/mo_main_top.jpg) no-repeat 50% 50% / cover; height: 60vh;}
   .main_top .main_ot {width: 100%;}
-  .main_top .main_typo img{height: 80px;}
+  .main_top .main_ot img {min-height: auto;}
+  .main_top .main_typo img{height: 60px;}
+  .main_top .main_typo .main_typo01 h4 {display: none;}
+  .main_top .main_typo .main_typo01 {}
+  .main_top .main_typo .main_typo02 {top: 77%;}
+
+  @keyframes typo_design {
+    0% {
+      left: -30%;
+    }
+    100% {
+      left: -5%;
+    }
+  }
+  
+  @keyframes typo_portfolio {
+    0% {
+      right: -45%;
+    }
+    100% {
+      right: -20%;
+    }
+  }
 
   .intro {flex-direction: column;}
   .intro_txt {display: flex; flex-direction: column;}
@@ -206,6 +228,7 @@ main {margin-bottom: 260px;}
   .career_ot {display: none;}
   .career .career_title { padding: 50px 0;}
   .career .career_title .title_txt img {height: 17px; object-fit: contain;}
+  .career_project {padding-bottom: 50px;}
   .career_project li {flex-direction: column; text-align: left;}
   .career_project li a {width: 90%;}
   .career_project li .career_project_txt {width: 90%; margin-top: 20px;}
@@ -224,20 +247,23 @@ main {margin-bottom: 260px;}
   .about .about_info .tool li img {width: 40%;}
   .tech .tech_box li .tech_icon {align-items: center;}
   .tech .tech_box li .tech_icon h2 {font-size: 20px;}
-  .about .about_title .about_typo img {margin-bottom: 10px;}
+  .about .about_title .about_typo img {margin-bottom: 10px; height: 17px;}
 
   .tech {flex-direction: column;}
   .tech .tech_title {width: 90%; border-right: none; height: auto; position: relative; text-align: left;}
   .tech .tech_box {width: 100%;}
   .tech .tech_box li {flex-direction: column; text-align: left; padding: 40px 0;} 
   .tech .tech_box li .tech_icon {width: 100%; margin-bottom:  20px;}
-  .tech .tech_title .tech_typo img {margin-bottom: 0;}
+  .tech .tech_title .tech_typo img {margin-bottom: 0; height: 2.5vh;}
   .tech .tech_title .contact_box {display: none;}
 
   .strength .strength_title {text-align: left;}
   .strength .strength_title .strength_typo img {height: 2.5vh;}
-  .strength .strength_box {flex-direction: column;}
+  .strength .strength_box {flex-direction: column; margin-bottom: 0;}
   .strength .strength_box li{ width: 100%; text-align: left; margin-bottom: 30px;}
   .strength .strength_box li .strength_sub_title h2 {font-size: 24px;}
   .strength .strength_box li h4 {font-size: 15px;}
+  .strength .together {margin-top: 50px; margin-bottom: 50px;}
+  .strength .together .together_typo {width: 80%;}
+  .strength .together .together_ot {width: 60%; margin-top: 20px;}
 }
